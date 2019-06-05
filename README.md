@@ -22,6 +22,7 @@ Using the provided [style guide](./UIStyleguideSkyArcade.pdf) and [wireframes](.
 - Customers currently find it difficult to see what promotions they're opted in to, and their progression through certain promotions. Re-ordering and highlighting this information on the promotional listing page worked well in lab tests.
 - Customers often get stuck in a promotion with no clear way back to the games they were playing.
 - A study has shown that users have more engagement with games when they’re presented with extra game details, but currently accessing these details requires leaving the current page, which impacts promotion opt-in rates.
+- 80% of our users play on mobile devices, but our top spenders prefer desktop machines. 
 
 #### Extra Credit:
 
