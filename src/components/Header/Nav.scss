@@ -1,0 +1,122 @@
+$tiny:					374px;
+$small:                 629px;
+$small-wide:            740px;
+$medium:                1023px;
+$large:                 1200px;
+$xlarge:                1600px;
+$siteWidthLimit:        1200px;
+
+$color-primary: #f17f27;
+$color-primary-light: #fdad3f;
+$color-background: #e6e7e8;
+$color-secondary: #b41970;
+$color-secondary-light: #db248a;
+$color-accent: #379da7;
+
+nav.masthead--nav {
+    order: 3;
+    width: 100%;
+    border-top: 1px solid $color-background;
+    border-bottom: 4px solid $color-primary;
+
+    @media (min-width: 768px) {
+        order: 0;
+        width: auto;
+        border: none;
+        flex-grow: 1;
+        justify-content: flex-start;
+    }
+
+    .tabbedNavList {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+
+        li {
+            flex: 1;
+            cursor: pointer;
+
+            @media (min-width: 768px) {
+                flex-grow: unset;
+            }
+
+            &.active {
+                background: $color-primary;
+
+                @media (min-width: 768px) {
+                    background: transparent;
+                    position: relative;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            height: 4px;
+                            background:orange;
+                        }
+                }
+
+                svg {
+                    fill: white;
+                }
+
+                a {
+                    color: white;
+
+                    @media (min-width: 768px) {
+                        color: $color-primary;
+                        font-family: SkyMedium;
+                    }
+                }
+
+                &:hover a {
+                    color: white;
+
+                    @media (min-width: 768px) {
+                        color: darken($color-primary, 10%);
+                    }
+                }
+            }
+
+            &:hover {
+                a {
+                    color: black;
+                    transition: all 250ms ease-in-out;
+                }
+
+                svg {
+                    fill: black;
+                    transition: all 250ms ease-in-out;
+                }
+            }
+        }
+
+        svg {
+            height: 16px;
+            margin-right: 8px;
+            fill: #555;
+
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            color: #555;
+            text-decoration: none;
+            padding: 16px;
+
+            @media (min-width: 768px) {
+                padding: 24px;
+            }
+        }
+    }
+}

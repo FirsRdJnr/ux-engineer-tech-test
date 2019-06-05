@@ -1,0 +1,46 @@
+
+
+.cross-sell {
+    background: #282c34;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 0 8px;
+
+    @media (min-width: 629px) {
+        padding: 0 16px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 0 24px;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+        height: 0;
+    }
+
+    &__inner {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 32px;
+        min-width: 800px;
+        max-width: 1200px;
+
+        a {
+            line-height: 0;
+        
+            &:nth-child(-n+7) img {
+                height: 16px;
+            }
+        
+            &:nth-last-child(-n+4) img {
+                height: 24px;
+            }
+        }
+    }
+}
+
+
+

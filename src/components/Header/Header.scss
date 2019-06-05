@@ -1,0 +1,27 @@
+$tiny:					374px;
+$small:                 629px;
+$small-wide:            740px;
+$medium:                1023px;
+$large:                 1200px;
+$xlarge:                1600px;
+$siteWidthLimit:        1200px;
+
+
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+    @media (min-width: 768px) {
+        padding: 0 24px;
+    }
+
+    .masthead {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: $siteWidthLimit;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,32 @@
+.in-game {
+
+    &__spin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: #f6f4f2;
+
+        &__btn {
+            background-image: linear-gradient(#f4f1ee, #fff);
+            border-radius: 50%;
+            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+            height: 24vw;
+            width: 24vw;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8vw;
+            transition: all 100ms linear;
+            cursor: pointer;
+
+            &:hover{
+                background-image: linear-gradient(#fff, #f4f1ee);
+                color:#f99e4e;
+                text-shadow:0px 0px 6px #f99e4e;
+            }
+        }
+    }
+}

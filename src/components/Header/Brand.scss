@@ -1,0 +1,28 @@
+.masthead--logo {
+    flex-grow: 1;
+
+    @media (min-width: 768px) {
+        flex-grow: unset;
+    }
+    
+    a {
+        height: 48px;
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 24px;
+            margin: 0 8px;
+
+            @media (min-width: 629px) {
+                margin: 0 16px;
+            }
+
+            @media (min-width: 768px) {
+                margin: 0 16px 0 0;
+                height: 32px;
+            }
+        }
+    }
+}

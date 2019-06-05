@@ -1,0 +1,27 @@
+{
+  "name": "parcel-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "rimraf dist && parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.8.1",
+    "parcel-plugin-asset-copier": "^1.0.0",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "sass": "^1.17.4"
+  },
+  "assetsPath": "src/static/"
+}

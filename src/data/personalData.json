@@ -1,0 +1,119 @@
+{
+    "UserName": "Clyde",
+    "Balance": {
+        "EUR": 232.88,
+        "PromoCash": 50,
+        "PromoSpins": 2.5
+    },
+    "LastLogIn": "2019-04-06T21:28:56.782Z",
+    "RecentlyPlayed": [
+        {
+            "id": "fb032158-f06c-4ec3-be35-2f3256874564",
+            "slug": "snake",
+            "lastPlayed": "2019-04-07T00:11:12Z",
+            "playCount": 4
+        },
+        {
+            "id": "7aaaa4bf-63a3-4fa3-b8d0-4c01fd8128c6",
+            "slug": "wolf-ridge",
+            "lastPlayed": "2019-04-06T21:34:22Z",
+            "playCount": 8
+        },
+        {
+            "id": "15d1f7c6-4b2f-4020-ad20-0a98285809b9",
+            "slug": "spartacus-legendary-warrior",
+            "lastPlayed": "2019-04-06T21:31:05Z",
+            "playCount": 1
+        },
+        {
+            "id": "fb62b806-d820-47a8-bd4f-48f7f580e329",
+            "slug": "jin-ji-bao-xi-endless-treasure",
+            "lastPlayed": "2019-04-02T20:55:22Z",
+            "playCount": 3
+        },
+        {
+            "id": "7b88329e-4a53-45f6-b74a-3466565d3c57",
+            "slug": "flamin-elle",
+            "lastPlayed": "2019-04-02T20:45:07Z",
+            "playCount": 4
+        },
+        {
+            "id": "755293b9-40d2-4f71-a2ce-09b115bc68ae",
+            "slug": "fortune-lucky",
+            "lastPlayed": "2019-03-24T21:15:36Z",
+            "playCount": 16
+        },
+        {
+            "id": "f553df37-892a-47c5-a87e-0856b41929cd",
+            "slug": "egyptian-queen",
+            "lastPlayed": "2019-03-24T20:49:55Z",
+            "playCount": 2
+        },
+        {
+            "id": "76e6b941-5c85-427f-8c44-11befc140682",
+            "slug": "rosellas-mystical-spins",
+            "lastPlayed": "2019-03-20T19:30:22Z",
+            "playCount": 6
+        },
+        {
+            "id": "4c01bb0e-929d-4d5c-9b6c-75aad6f91c2e",
+            "slug": "vikings-unleashed-megaways",
+            "lastPlayed": "2019-03-19T21:04:32Z",
+            "playCount": 1
+        },
+        {
+            "id": "36fd471b-96b7-4389-aedd-c91c09647caf",
+            "slug": "wild-fury",
+            "lastPlayed": "2019-03-19T20:30:01Z",
+            "playCount": 4
+        },
+        {
+            "id": "4448912a-1805-4897-9037-c3b2297a4ca2",
+            "slug": "slots-o-gold",
+            "lastPlayed": "2019-03-19T20:28:16Z",
+            "playCount": 2
+        },
+        {
+            "id": "5929b8e1-0ba2-49a6-a08c-f1e19a473481",
+            "slug": "paws-of-fury",
+            "lastPlayed": "2019-03-10T22:52:00Z",
+            "playCount": 12
+        },
+        {
+            "id": "dcea5543-59dc-4c8e-8959-0e99843f864c",
+            "slug": "king-kong-cash",
+            "lastPlayed": "2019-03-10T22:15:47Z",
+            "playCount": 5
+        },
+        {
+            "id": "7c757596-28a9-4ea4-a6ed-f0335121d466",
+            "slug": "the-goonies",
+            "lastPlayed": "2019-03-08T00:12:35Z",
+            "playCount": 3
+        },
+        {
+            "id": "c4683241-0aea-460d-986c-3248fbc046d0",
+            "slug": "ted-scratch",
+            "lastPlayed": "2019-03-07T23:28:51Z",
+            "playCount": 6
+        }
+    ],
+    "biggestWin": {
+        "id": "755293b9-40d2-4f71-a2ce-09b115bc68ae",
+        "slug": "fortune-lucky",
+        "date": "2019-04-04T01:28:56.782Z",
+        "win": 632.00,
+        "stake": 1.5
+    },
+    "OptedInPromo": [
+        {
+            "id": 9268
+        },
+        {
+            "id": 4041
+        },
+        {
+            "id": 9044
+        }
+    ]
+}

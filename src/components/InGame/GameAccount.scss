@@ -1,0 +1,172 @@
+$s:    550px !default;
+$m:    750px !default;
+$l:    1000px !default;
+$xl:   1200px !default;
+$site-width: 1400px !default;
+
+
+@mixin media-query($media-query) {
+    @if $media-query == s {
+        @media only screen and (min-width: $s) { @content; }
+    }
+
+    @if $media-query == m {
+        @media only screen and (min-width: $m) { @content; }
+    }
+
+    @if $media-query == l {
+        @media only screen and (min-width: $l) { @content; }
+    }
+
+    @if $media-query == xl {
+        @media only screen and (min-width: $xl) { @content; }
+    }
+}
+
+@mixin width-limit {
+    max-width: $site-width;
+    margin: 0 auto;
+}
+
+@mixin siteGutter {
+    padding: 0 $unit-small;
+
+    @include media-query(m) {
+        padding: 0 $unit-medium;
+    }
+
+    @include media-query(l) {
+        padding: 0 $unit-large;
+    }
+}
+
+$unit-xlarge:    32px;
+$unit-large:     24px;
+$unit-medium:    16px;
+$unit-small:     8px;
+$unit-tiny:      4px;
+
+$color-primary: #f17f27;
+$color-primary-light: #fdad3f;
+$color-background: #e6e7e8;
+$color-secondary: #b41970;
+$color-secondary-light: #db248a;
+$color-accent: #379da7;
+
+
+.menu__account {
+    width: 100vw;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: flex-end;
+    background: white;
+    transition: width 200ms ease-in-out;
+    display: flex;
+    color: #666;
+
+    @media only screen and (orientation: portrait) and (max-width: $m) {
+        // width: 100vw;
+        height: 60px;
+        // position: relative;
+        z-index: 4;
+    }
+
+    .open & {
+        
+        
+        width: 100vw;
+        height: 60px;
+    }
+
+    &__logo {
+        position: absolute;
+        top: $unit-small;
+        left: $unit-small;
+
+        img {
+            width: 42px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.15);
+        }
+    }
+
+    &__time,
+    &__paytable,
+    &__sound,
+    &__account {
+        height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .open & {
+            height: 100%;
+            width: 70px;
+        }
+    }
+
+    &__time {
+        font-size: 12px;
+        position: absolute;
+        top: $unit-xlarge*2;
+        left: $unit-medium;
+
+        .open & {
+            position: relative;
+            top: 0;
+            left: auto;
+        }
+
+        @media only screen and (orientation: portrait) and (max-width: $m) {
+            top: 50%;
+            left: 60px;
+        }
+    }
+
+    &__paytable,
+    &__sound,
+    &__account {
+        position: absolute;
+        border-left: 1px solid lightgrey;
+        margin-top: -100px;
+        height: 0;
+        transition: all 200ms ease-in-out;
+        z-index: 1;
+        padding: 0 16px;
+
+        .open & {
+            position: relative;
+            margin: 0;
+        }
+
+        svg {
+            margin-bottom: 4px;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            vertical-align: middle;
+            fill: transparent;
+
+            .open & {
+                fill: #454545;
+            }
+        }
+
+        .icon__text {
+            font-size: 12px;
+            color: transparent;
+
+            .open & {
+                color: #454545;
+            }
+        }
+    }
+
+    @for $i from 1 through 5 {
+        > div:nth-child(#{$i}) {
+            transition-delay: $i * 0.1s;
+        }
+    }
+}
